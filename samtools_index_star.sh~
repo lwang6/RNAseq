@@ -1,0 +1,8 @@
+#!bin/bash
+
+cd /home/lwang6/Documents/RNAseq/STAR/alignments
+
+for filename in *.Aligned.sortedByCoord.out.bam
+samtools index $filename 
+done
+

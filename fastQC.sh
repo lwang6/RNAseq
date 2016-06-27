@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd  /home/lwang6/Documents/RNAseq/fastq
+for foldername in Group*
+do
+cd $foldername/
+for filename in Group*
+do
+echo "I am running FASTQC for raw $filename"
+fastqc $filename\.fastq -o ./FASTQC_raw
+done
+cd ..
+done
