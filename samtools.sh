@@ -7,8 +7,9 @@ for foldername in Group*
 do
 cd ./$foldername
 echo "I am sorting bam files for $foldername"
-samtools sort -o  $foldername\_alignments.sorted $foldername\_accepted_hits.bam | samtools index
-#samtools index $foldername\_alignments.sorted.bam
+samtools sort -o  $foldername\_alignments.sorted $foldername\_accepted_hits.bam 
+samtools index $foldername\_alignments.sorted.bam
+
 samtools sort -o  $foldername\_alignments.namesorted  -n  $foldername\_accepted_hits.bam  
 cd ..
 done
