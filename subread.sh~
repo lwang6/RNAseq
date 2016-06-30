@@ -15,7 +15,7 @@ do
 cd ./$foldername/filtered
 #mkdir $OUT/$foldername
 echo "I am running subread alignment for filtered $foldername"
-subread-align  -t 0 -T 18 -i $SUBREAD_INDEX/hg19 \
+subread-align  -t 0 -T 18 --trim3 4 -i $SUBREAD_INDEX/hg19 \
 -r $foldername\_filtered_1.fastq -R $foldername\_filtered_2.fastq \
 -o $OUT/$foldername\_alignments.bam 
 cd ../..

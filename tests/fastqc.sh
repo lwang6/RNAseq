@@ -1,13 +1,9 @@
 #!/bin/bash
 
-cd /media/sf_Ubuntu_share
+cd  ~/Documents/test/test_data
+#mkdir FASTQC
 
-for foldername in Group*
+for filenames in reads_*
 do
-cd $foldername/
-for filename in Group*
-do
-fastqc $filename*.fastq -o /media/sf_Ubuntu_share/Group*/FASTQC/
-done
-cd ..
+fastqc $filename -o ./FASTQC
 done

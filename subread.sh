@@ -21,5 +21,4 @@ subread-align  -t 0 -T 18 --trim3 4 -i $SUBREAD_INDEX/hg19 \
 cd ../..
 done
 
-#mail -s "Subread alignment is done" lwang6@hawaii.edu
-# -t 0 --trim3 4 -T 18
+

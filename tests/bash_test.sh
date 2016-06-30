@@ -2,6 +2,6 @@
 
 echo 'I am testing shell script'
 
-cd ~/Program
+cd ~/Documents/Program
 ls -l 
 
